@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/space1">
 
     <TextView
         android:id="@+id/textView2"
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/app_baslik"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,11 +31,12 @@
         android:hint="@string/weight_hint"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        android:textColor="@color/material_dynamic_primary60"
+        android:textColor="@color/material_dynamic_primary100"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbVenus" />
+        app:layout_constraintTop_toBottomOf="@+id/cbVenus"
+        tools:textColorHint="@color/white" />
 
     <Button
         android:id="@+id/button"
@@ -52,6 +55,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
         android:text="Result"
+        android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,6 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Mars"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/cbVenus"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,6 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Venüs"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/cbJupiter"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/cbMars"
@@ -86,6 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Jüpiter"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/cbVenus"
