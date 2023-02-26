@@ -4,71 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/space1">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/app_baslik"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:fontFamily="monospace"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@drawable/space3"
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/editTextWeight"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_background"
         android:ems="10"
         android:hint="@string/weight_hint"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
         android:textColor="@color/material_dynamic_primary100"
+        android:textColorHint="@color/white"
+        android:textColorLink="#F6F3F3"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbVenus"
+        app:layout_constraintTop_toBottomOf="@+id/cbDunya"
         tools:textColorHint="@color/white" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/button_text"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
 
     <TextView
         android:id="@+id/textViewResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="monospace"
         android:text="Result"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/app_baslik"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/cbMars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Mars"
         android:textColor="@color/white"
+        android:textColorLink="@color/purple_200"
+        android:textSize="22sp"
         app:layout_constraintEnd_toStartOf="@+id/cbVenus"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,9 +76,12 @@
         android:id="@+id/cbVenus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Venüs"
         android:textColor="@color/white"
+        android:textColorHighlight="@color/purple_200"
+        android:textColorLink="@color/purple_200"
+        android:textSize="22sp"
         app:layout_constraintEnd_toStartOf="@+id/cbJupiter"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/cbMars"
@@ -90,12 +91,84 @@
         android:id="@+id/cbJupiter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Jüpiter"
         android:textColor="@color/white"
+        android:textColorLink="@color/purple_200"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/cbVenus"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/cbSaturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Satürn"
+        android:textColor="@color/white"
+        android:textColorLink="@color/purple_200"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/cbUranus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cbMerkur"
+        app:layout_constraintTop_toBottomOf="@+id/cbVenus" />
+
+    <CheckBox
+        android:id="@+id/cbUranus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Uranüs"
+        android:textColor="@color/white"
+        android:textColorLink="@color/purple_200"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cbSaturn"
+        app:layout_constraintTop_toBottomOf="@+id/cbJupiter" />
+
+    <CheckBox
+        android:id="@+id/cbMerkur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Merkür"
+        android:textColor="@color/white"
+        android:textColorLink="@color/purple_200"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/cbSaturn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbMars" />
+
+    <CheckBox
+        android:id="@+id/cbDunya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Dünya"
+        android:textColor="@color/white"
+        android:textColorLink="@color/purple_200"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/cbNeptun"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbMerkur" />
+
+    <CheckBox
+        android:id="@+id/cbNeptun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Neptün"
+        android:textColor="@color/white"
+        android:textColorLink="@color/purple_200"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cbDunya"
+        app:layout_constraintTop_toBottomOf="@+id/cbUranus" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

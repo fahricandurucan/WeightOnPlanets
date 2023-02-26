@@ -14,6 +14,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     val MARS = 0.38
     val VENUS = 0.91
     val JUPITER = 2.34
+    val MERKUR = 0.38
+    val SATURN = 1.06
+    val URANUS = 0.92
+    val NEPTUN = 1.19
+    val DUNYA = 1
     val POUND_TO_KILO = 0.45359237
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +28,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         cbVenus.setOnClickListener(this)
         cbMars.setOnClickListener(this)
         cbJupiter.setOnClickListener(this)
+        cbMerkur.setOnClickListener(this)
+        cbSaturn.setOnClickListener(this)
+        cbUranus.setOnClickListener(this)
+        cbDunya.setOnClickListener(this)
+        cbNeptun.setOnClickListener(this)
 
         /*button.setOnClickListener {
             var userPound = kiloToPound(weightOfUser.toString().toDouble())
@@ -54,16 +64,81 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 R.id.cbMars -> if(isChecked){
                     cbVenus.isChecked = false
                     cbJupiter.isChecked = false
+                    cbMerkur.isChecked = false
+                    cbSaturn.isChecked = false
+                    cbUranus.isChecked = false
+                    cbDunya.isChecked = false
+                    cbNeptun.isChecked = false
                     calculateWeightPound(poundOfUser,v)
                 }
                 R.id.cbVenus -> if(isChecked){
                     cbMars.isChecked = false
                     cbJupiter.isChecked = false
+                    cbMerkur.isChecked = false
+                    cbSaturn.isChecked = false
+                    cbUranus.isChecked = false
+                    cbDunya.isChecked = false
+                    cbNeptun.isChecked = false
                     calculateWeightPound(poundOfUser,v)
                 }
                 R.id.cbJupiter -> if(isChecked){
                     cbVenus.isChecked = false
                     cbMars.isChecked = false
+                    cbMerkur.isChecked = false
+                    cbSaturn.isChecked = false
+                    cbUranus.isChecked = false
+                    cbDunya.isChecked = false
+                    cbNeptun.isChecked = false
+                    calculateWeightPound(poundOfUser,v)
+                }
+                R.id.cbMerkur -> if(isChecked){
+                    cbMars.isChecked = false
+                    cbVenus.isChecked = false
+                    cbJupiter.isChecked = false
+                    cbSaturn.isChecked = false
+                    cbUranus.isChecked = false
+                    cbDunya.isChecked = false
+                    cbNeptun.isChecked = false
+                    calculateWeightPound(poundOfUser,v)
+                }
+                R.id.cbSaturn -> if(isChecked){
+                    cbMars.isChecked = false
+                    cbJupiter.isChecked = false
+                    cbMerkur.isChecked = false
+                    cbUranus.isChecked = false
+                    cbDunya.isChecked = false
+                    cbNeptun.isChecked = false
+                    cbVenus.isChecked = false
+                    calculateWeightPound(poundOfUser,v)
+                }
+                R.id.cbUranus -> if(isChecked){
+                    cbMars.isChecked = false
+                    cbJupiter.isChecked = false
+                    cbMerkur.isChecked = false
+                    cbSaturn.isChecked = false
+                    cbDunya.isChecked = false
+                    cbNeptun.isChecked = false
+                    cbVenus.isChecked = false
+                    calculateWeightPound(poundOfUser,v)
+                }
+                R.id.cbDunya -> if(isChecked){
+                    cbMars.isChecked = false
+                    cbJupiter.isChecked = false
+                    cbMerkur.isChecked = false
+                    cbSaturn.isChecked = false
+                    cbUranus.isChecked = false
+                    cbNeptun.isChecked = false
+                    cbVenus.isChecked = false
+                    calculateWeightPound(poundOfUser,v)
+                }
+                R.id.cbNeptun -> if(isChecked){
+                    cbMars.isChecked = false
+                    cbJupiter.isChecked = false
+                    cbMerkur.isChecked = false
+                    cbSaturn.isChecked = false
+                    cbUranus.isChecked = false
+                    cbDunya.isChecked = false
+                    cbVenus.isChecked = false
                     calculateWeightPound(poundOfUser,v)
                 }
             }
@@ -79,6 +154,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.cbMars -> result = pound*MARS
             R.id.cbVenus -> result = pound*VENUS
             R.id.cbJupiter -> result = pound*JUPITER
+            R.id.cbMerkur -> result = pound*MERKUR
+            R.id.cbSaturn -> result = pound*SATURN
+            R.id.cbUranus -> result = pound*URANUS
+            R.id.cbDunya -> result = pound*DUNYA
+            R.id.cbNeptun -> result = pound*NEPTUN
             else -> result = 0.0
         }
 
